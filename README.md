@@ -1,1 +1,1 @@
-# myplan-landing
+# myplan-blog

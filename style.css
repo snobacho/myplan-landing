@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kablammo&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap');
+
+
+:root {
+    --blue: #3c84f7;
+    ;
+    --heading-color: #212121;
+    --text-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+    background-color: var(--blue);
+
+}
+
+header .logo {
+    height: 100px;
+    margin: 20px;
+}
+header .logo img { 
+    height: 100%;
+    object-fit: contain;
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(22, 22, 22);
+    font-size: 18px;
+    transition: color 0.3s ease;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 7px 15px;
+    letter-spacing: 1px;
+    
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+
+.tours-heading {
+    position: relative;
+    height: 70vh;
+    background-image: url(borjomi.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 10px 10px 10px #000000;
+    z-index: 3;
+}
+
+.tours-heading::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+}
+
+.heading-content h1 {
+    color: rgb(255, 255, 253);
+    font-size: 100px;
+    max-width: 900px;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+.statistics {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+
+.statistics span {
+    font-family: "Bebas Neue", sans-serif;
+    display: flex;
+    align-items: center;
+    letter-spacing: .7px;
+    font-size: 20px;
+    color: white;
+}
+
+.statistics span::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #5ba4ff;
+    border-radius: 50%;
+    margin-right: 5px;
+    border: 3px solid rgb(236, 221, 0);
+    margin-bottom: 3px;
+}
+
+
+
+.book-tour {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 150px;
+    height: 45px;
+    background-color: #f0f0f0;
+    border: none;
+    background-color: #3c84f7;
+    color: white;
+    border-radius: 0 30px 30px 0;
+    z-index: 4;
+    font-size: 20px;
+    font-family: "Playfair Display", serif;
+    transition: .5s;
+    font-weight: 600;
+    cursor: pointer;
+    border-left: none;
+
+}
+
+.book-tour:hover {
+    background-color: var(--blue);
+}
+
+
+
+.tour-section .tour-heading  {
+    font-size: 40px;
+    display: flex;
+    margin-top: 50px;
+    padding-left: 50px;
+    font-family: "Playfair Display", serif;
+    align-items: center;
+}
+
+.tour-section .tour-heading span {
+    background-color: var(--blue);
+    width: 50px;
+    height: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+
+.tour-main-img {
+    width: 100%;
+    height: 100vh;
+}
+.tour-main-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tour-descr {
+    padding: 50px;
+    padding-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    max-width: 1400px;
+    text-align: center;
+    line-height: 30px;
+    margin: 0 auto;
+    font-family: 'Lora', serif;
+    font-weight: 400; 
+}
+
+
+.tour-plan {
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+}
+
+.tour-plan a {
+    color: white;
+    font-size: 18px;
+    font-family: "Playfair Display", serif;
+    margin: 0 auto;
+    height: 40px;
+    width: 200px;
+    background-color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+footer {
+    padding: 15px;
+    background: var(--blue);
+    display: flex; align-items: center; flex-direction: column;border-top: 2px solid rgb(240, 235, 235);  margin-top: 100px;
+}
+
+footer button a {
+    font-family: "Playfair Display", serif;
+    text-decoration: none;
+    color: #292727;
+    font-size: 20px;
+}
+
+
+
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+  }
+  
+  .popup-content {
+    position: relative;
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    min-height: 400px;
+    background: #fff;
+    border-radius: 8px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .close-popup {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .contact-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .contact-options a {
+   font-size: 18px;
+   font-family: 'Lora', serif;
+  }
+  
+  .contact-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* @media css  */
+  @media screen and (max-width: 1408px) {
+    .heading-content h1 {
+        font-size:40px;
+
+    }.heading-content {
+        padding: 10px;
+    }
+    .heading {
+     font-size: 22px;
+    }
+
+    .tour-section .tour-heading {
+        padding: 10px;
+    }
+    .tour-heading span {
+        font-size: 18px;
+        width: 30px;
+        height: 30px;
+        padding-left: 15px;
+    }
+
+    header {
+        justify-content: space-evenly;
+    }
+  }
+
+
+
+  @media screen and (max-width: 608px) {
+    header {
+        flex-direction: column;
+    }
+    header .statistics {
+        gap: 10px;
+    }
+    header .statistics span {
+        font-size: 17px;
+    }
+    footer {
+        padding-bottom: 30px;
+    }
+    .tour-descr {
+        padding: 15px;
+        line-height: 25px;
+    }
+    header .logo {
+        margin: 10px;
+    }
+
+    .contact-options img {
+        width: 30px;
+    }
+    .contact-options a {
+        font-size: 15px;
+    }
+  }
+
+
+
+
+  .social-icons {
+    display: flex;
+    gap: 15px;
+    margin: 15px;
+}
+
+.social-icons .icon {
+    font-size: 17px;
+    color: white; /* Change this color as needed */
+    text-decoration: none;
+    transition: color 0.3s;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
